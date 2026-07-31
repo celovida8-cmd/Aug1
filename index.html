@@ -8,6 +8,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Literata:ital,wght@0,400;0,500;1,400&family=Caveat:wght@500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
+    .side-flower{
+    position:fixed;
+    top:50%;
+    transform:translateY(-50%);
+    width:260px;
+    z-index:0;
+    pointer-events:none;
+    animation:float 5s ease-in-out infinite;
+}
+
+.left-flower{
+    left:0;
+}
+
+.right-flower{
+    right:0;
+}
+
+.side-flower img{
+    width:100%;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(-50%);
+    }
+    50%{
+        transform:translateY(calc(-50% - 15px));
+    }
+}
 
 .sunflower{
     position:fixed;
@@ -264,7 +294,21 @@
 </head>
 <body>
 
-  <body>
+    <div class="side-flower left-flower">
+    <img src="left.png">
+</div>
+
+<div class="side-flower right-flower">
+    <img src="right.png">
+</div>
+
+<div class="container">
+    
+<div class="flowers left">
+    🌻🌼🌻🌼🌻
+
+<div class="flowers right">
+    🌼🌻🌼🌻🌼
 
 <div class="sunflower left">
   🌻
