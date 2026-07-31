@@ -8,6 +8,45 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Literata:ital,wght@0,400;0,500;1,400&family=Caveat:wght@500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
+
+.sunflower{
+    position:fixed;
+    font-size:70px;
+    z-index:0;
+    animation:float 5s ease-in-out infinite;
+    user-select:none;
+    pointer-events:none;
+    filter:drop-shadow(0 0 10px rgba(255,200,0,.5));
+}
+
+.left{
+    left:20px;
+    top:45%;
+}
+
+.right{
+    right:20px;
+    top:45%;
+}
+
+.top-left{
+    left:20px;
+    top:20px;
+}
+
+.top-right{
+    right:20px;
+    top:20px;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0) rotate(-3deg);
+    }
+    50%{
+        transform:translateY(-15px) rotate(3deg);
+    }
+}
   :root{
     --cream:#FFF7E2;
     --cream-deep:#FFEDB8;
@@ -225,6 +264,25 @@
 </head>
 <body>
 
+  <body>
+
+<div class="sunflower left">
+  🌻
+</div>
+
+<div class="sunflower right">
+  🌻
+</div>
+
+<div class="sunflower top-left">
+  🌻
+</div>
+
+<div class="sunflower top-right">
+  🌻
+</div>
+
+<!-- Dito na magsisimula yung existing mong website -->
 <div id="petal-field" aria-hidden="true"></div>
 
 <section id="landing">
